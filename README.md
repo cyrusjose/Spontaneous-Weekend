@@ -1,1 +1,1 @@
-# ProjectOne
+# Spontaneous Weekend Planner
