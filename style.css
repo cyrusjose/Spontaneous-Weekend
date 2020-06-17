@@ -1,0 +1,74 @@
+@import url("../css/style/pageColor.css");
+@import url("../css/style/textDecor.css");
+@import url("../css/style/class.css");
+
+.container{
+    display: grid;
+    height: 100%;
+    margin: auto;
+    grid-template-columns: repeat(2, 1fr) 0.50fr;
+    grid-template-rows: 100px repeat(3, 1fr) 0.25fr;
+    grid-template-areas: 
+    "top top top"
+    "topLeft topRight side"
+    "midLeft midRight side"
+    "botLeft botRight side"
+    "bot bot bot";
+    grid-gap: 30px;
+    justify-content: center;
+}
+
+.description{
+    grid-area: side;
+}
+
+#title{
+    grid-area: top;
+    text-transform: capitalize;
+}
+
+#one{
+    grid-area: topLeft;
+}
+
+#two{
+    grid-area: topRight;
+}
+
+#three{
+    grid-area: midLeft;
+}
+
+#four{
+    grid-area: midRight;
+}
+
+#five{
+    grid-area: botLeft;
+}
+
+#six{
+    grid-area: botRight;
+}
+
+#foot{
+    grid-area: bot;
+}
+
+@media(min-width: 360px) and (max-width: 1024px){
+    .container{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 100px 1fr repeat(7, 0.05fr);
+        grid-template-areas:
+        "top"
+        "side"
+        "topLeft"
+        "topRight"
+        "midLeft"
+        "midRight"
+        "botLeft"
+        "botRight"
+        "bot";
+    }
+}
