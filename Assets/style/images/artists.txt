@@ -1,0 +1,23 @@
+tacos: Christine Siracusa
+gyoza: Charles Deluvio
+salad: Eiliv-Sonas Aceron
+pizza: Thomas Tucker
+french-toast: Joseph Gonzalez
+
+park-bench: Aaron Burden
+flowers: Miguel Ibáñez 
+trees: kazuend 
+lake: James Wheeler
+desert: frank mckenna
+
+clapboard: Jakob Owens
+film-reels: Noom Peerapong 
+video-camera: Jakob Owens
+television: Jan Böttinger 
+
+
+
+
+
+
+
