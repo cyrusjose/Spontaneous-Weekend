@@ -1,1 +1,19 @@
 @import url('style.css');
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.body-container{
+    display: grid;
+    width: 800px;
+    max-width: 75%;
+    justify-content: center;
+    background-color: white;
+    border-radius: 50px;
+    padding: 50px;
+    /* x-offset: 0, y-offset: 0, blur: 10px, spread: 2px*/
+    box-shadow: 0 0 10px 4px;
+}
