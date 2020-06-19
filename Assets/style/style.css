@@ -8,6 +8,9 @@ body {
   margin-bottom: 25px;
 }
 
+.hover:hover {
+  color: white;
+}
 .navbar-toggle.navbar-left {
   float: left;
   margin-left: 25px;
