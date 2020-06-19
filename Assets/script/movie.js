@@ -1,7 +1,8 @@
+var movies = ['Coraline']
 $(document).ready(function(){
 
     var movie = $(this).attr("data-name");
-    var queryURL = "https://www.omdbapi.com/?t=" + movie + "&apikey=trilogy";
+    var queryURL = "https://www.omdbapi.com/?t=" + movies + "&apikey=trilogy";
 
     $.ajax({
         url: queryURL,
