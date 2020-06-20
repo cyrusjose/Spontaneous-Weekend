@@ -1,4 +1,4 @@
-// Search by food category and location
+// global variables
 var apikey = "eee323892b3fbbbde9d9b268625c3602";
 var randomBtn = $(".random-btn");
 var lattitude = "33.669445";
@@ -7,12 +7,12 @@ var resName = $(".restaurant-name");
 var resPrice = $(".restaurant-price");
 var resAddress = $(".restaurant-address");
 var resCuisine = $(".restaurant-cuisine");
-// var resImg = $(".restaurant-img");
 var imgDiv = $(".imgDiv");
 var callBtn = $(".call-btn");
 var webBtn = $(".web-btn");
 var results = $(".results-container");
 
+// put in necessary info in settings 
 var settings = {
     "async": true,
     "crossDomain": true,
@@ -23,18 +23,20 @@ var settings = {
     }
 }
 
+// hide buttons and results container
 callBtn.hide();
 webBtn.hide();
 results.hide();
 
-
+// click restaurant button to randomly generate a restaurant with specific coordinates
 randomBtn.click(function(){
 
+    // show buttons and results container
     callBtn.show();
     webBtn.show();
     results.show();
 
-
+    // grab restaurant info from zomato
     $.getJSON(settings, function(data){
         console.log(data);
         var restaurants = data.restaurants.length
