@@ -1,17 +1,17 @@
-html {
-  margin: 0;
-  padding: 0;
-}
-
 body {
   background-color: #950952;
-  height: 100%;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
 }
-.hero {
+
+main {
+  flex: 1 0 auto;
+}
+
+#header {
   background-color: #73b294;
-  width: 100%;
-  height: 200px;
-  margin-bottom: 25px;
+  text-align: center;
 }
 
 .hover:hover {
@@ -63,13 +63,12 @@ img.medium {
 }
 
 .footer {
-  position: fixed;
   width: 100%;
   background-color: #023618;
   color: white;
   text-align: center;
   font-family: "Dancing Script", cursive;
-  padding: 3rem 0rem;
+  padding: 1.5rem 0rem;
 }
 
 /* .footer-text {
