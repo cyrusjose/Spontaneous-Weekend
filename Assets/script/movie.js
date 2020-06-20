@@ -1,4 +1,5 @@
-var movies = ["train to busan"];
+var movies = ["train to busan", "coraline", "moana", "the invisible man", "artemis fowl", "knives out", "the invisible man"];
+
 $(document).ready(function () {
   // Required for nav bar mobile functionality
   $(".sidenav").sidenav();
@@ -7,23 +8,26 @@ $(document).ready(function () {
     $(".carousel").carousel();
   });
 
-  //  URL for ajax call
-  var queryURL = "https://www.omdbapi.com/?t=" + movies + "&apikey=trilogy";
-  //   Ajax call
-  $.ajax({
-    url: queryURL,
-    method: "GET",
-  }).done(function (response) {
-    // ON click the movie will be shown
-    $(".generateMovie").on("click", function (event) {
-      // Prevent default function
-      event.preventDefault();
+  $(".generateMovie").on("click", function (event) {
+    // Prevent default function
+    event.preventDefault();
+
+    //   Randomize movies
+    var movieIndex = Math.floor(Math.random() * movies.length);
+    //  URL for ajax call
+    var queryURL =
+      "https://www.omdbapi.com/?t=" + movies[movieIndex] + "&apikey=trilogy";
+
+    //   Ajax call
+    $.ajax({
+      url: queryURL,
+      method: "GET",
+    }).then(function (response) {
+      // ON click the movie will be shown
+
       //   See object info in console.
       console.log(response);
-    //   Randomize movies
-    // for (var i = 0; i < movies.length; i++){
 
-    // }
       //   Create variables.
       var posterImage = response.Poster;
       var title = response.Title;
