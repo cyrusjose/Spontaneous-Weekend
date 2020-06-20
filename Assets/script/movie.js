@@ -27,6 +27,8 @@ $(document).ready(function () {
 
       // $('.body-container').text(JSON.stringify(response));
       $('.poster').attr('src', posterImage);
+      $('.main').addClass('body-container');
+      $('.movieInfo').removeClass('hide');
       $('.title').text(title);
       $('.description').text(synopsis);
       $('.release').text(releaseDate);

@@ -29,11 +29,7 @@
     />
 
     
-    <!-- Bulma CSS -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css"
-    />
+    
 
     <link rel="stylesheet" href="../style/movie.css" />
     <!-- JS deferred -->
@@ -89,10 +85,10 @@
 
     <!-- Begin Body -->
     <button class = "generateMovie">Find a Movie</button>
-    <div class="body-container">
+    <div class="main">
       <img class="poster" />
       <br />
-      <div class="movieInfo">
+      <div class="movieInfo hide">
         <h2 class="title"></h2>
         <ul>
           <li class="description"></li>
@@ -106,13 +102,11 @@
     <!-- End Body -->
 
     <!-- Begin footer -->
-    <footer class="footer mt-auto py-3" id="footer">
+    <div class="footer-copyright footer">
       <div class="container">
-        <span class="text-muted">
-          <p id="footer-text">an undefined production 2020</p>
-        </span>
+        an undefined production 2020
       </div>
-    </footer>
+    </div>
     <!-- End footer -->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
