@@ -12,43 +12,53 @@
     justify-content: center;
     padding: 50px;
     margin: auto;
+    
 }
 
 .generateMovie, .poster{
-    display: grid;
-    justify-content: center;
+    display: flex;
+    align-items: center;
+    
     border-radius: 50px;
     box-shadow: 0 0 25px black;
     margin: 20px;
+    background-color: #73B294;
 }
 .generateMovie{
-    display: grid;
-    /* justify-content: center; */
+    padding: 20px;
+}
+.genButton{
+    display: flex;
+    justify-content: center;
     padding: 10px;
-    max-width: 20%;
-    height: 30px;
-    text-align: center
+    width: 100%;
+    
+    text-align: center;
+    
 }
 
 .movieInfo{
-    display: block;
+    display: flex;
     width: 800px;
     max-width: 75%;
-    justify-content: center;
-    background-color: white;
+    align-items: center;
+    /* justify-content: center; */
+    /* background-color: white; */
     border-radius: 50px;
     padding: 20px;
     /* x-offset: 0, y-offset: 0, blur: 10px, spread: 2px*/
     box-shadow: 0 0 10px 4px;
+    background-color: #73B294;
 }
 
 .title{
     text-decoration: underline;
     border-radius: 80px;
     box-shadow: 0 0 40px black;
-    background-color: white;
+    background-color: #73B294;
 }
 .info{
     text-decoration: underline;
     font-weight: bolder;
 }
+
