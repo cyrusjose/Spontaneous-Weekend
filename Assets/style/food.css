@@ -1,4 +1,4 @@
-/* @import url('style.css'); */
+@import url('style.css');
 
 
 h4{
@@ -9,19 +9,39 @@ h4{
 .restaurant-name{
     font-size: larger;
     font-weight: bold;
-    color: rgb(190, 54, 54);
+    color: rgb(0, 0, 0);
 }
 
 img{
-    width: 380px;
+    width: 400px;
     height: 280px;
+    border-radius: 30px;
 }
-
-/* .results-container {
-    border-style: ridge;
-} */
 
 .webLink{
     color: black;
 }
 
+.restaurant-cuisine{
+    font-weight: 600;
+}
+
+.restaurant-address{
+    font-weight: 600;
+}
+
+.restaurant-price{
+    font-weight: 600;
+}
+
+.call-btn{
+    background-color: rgb(51, 153, 139);
+}
+
+.web-btn{
+    background-color: rgb(51, 153, 139);
+}
+
+.random-btn{
+    background-color: rgb(51, 153, 139);
+}
