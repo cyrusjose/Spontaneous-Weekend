@@ -5,8 +5,20 @@
 *::after {
     box-sizing: border-box;
 }
-
 .body-container{
+    display: grid;
+    justify-content: center;
+    padding: 50px;
+    margin: auto;
+}
+
+.generateMovie{
+    border-radius: 50px;
+    box-shadow: 0 5px 20px black;
+    margin-bottom: 20px;
+}
+
+.movieInfo{
     display: grid;
     width: 800px;
     max-width: 75%;

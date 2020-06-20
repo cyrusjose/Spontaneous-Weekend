@@ -1,19 +1,21 @@
-var movies = ["Coraline"];
+var movies = ['Coraline'];
 $(document).ready(function () {
   // Required for nav bar mobile functionality
-  $(".sidenav").sidenav();
+  $('.sidenav').sidenav();
   //Required for carousel
   $(document).ready(function () {
-    $(".carousel").carousel();
+    $('.carousel').carousel();
   });
 
-  var movie = $(this).attr("data-name");
-  var queryURL = "https://www.omdbapi.com/?t=" + movies + "&apikey=trilogy";
+  var movie = $(this).attr('data-name');
+  var queryURL = 'https://www.omdbapi.com/?t=' + movies + '&apikey=trilogy';
 
   $.ajax({
     url: queryURL,
-    method: "GET",
+    method: 'GET',
   }).then(function (response) {
+    $('.generateMovie').on('click', function (event) {
+      event.preventDefault();
       console.log(response);
       var posterImage = response.Poster;
       var title = response.Title;
@@ -23,15 +25,14 @@ $(document).ready(function () {
       var genre = response.Genre;
       var releaseDate = response.Released;
 
-    // $('.body-container').text(JSON.stringify(response));
-    $('.poster').attr('src', posterImage);
-    $('.title').text(title);
-    $('.description').text(synopsis);
-    $('.release').text(releaseDate);
-    $('.rating').text(rating);
-    $('.runTime').text(runTime);
-    $('.genre').text(genre);
-
-
+      // $('.body-container').text(JSON.stringify(response));
+      $('.poster').attr('src', posterImage);
+      $('.title').text(title);
+      $('.description').text(synopsis);
+      $('.release').text(releaseDate);
+      $('.rating').text(rating);
+      $('.runTime').text(runTime);
+      $('.genre').text(genre);
+    });
   });
 });
