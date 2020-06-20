@@ -57,10 +57,10 @@ main {
   scroll-snap-align: start;
 }
 
-img.medium {
+/* img.medium {
   width: 250px;
   height: 250px;
-}
+} */
 
 .footer {
   width: 100%;
