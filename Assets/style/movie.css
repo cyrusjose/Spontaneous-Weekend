@@ -12,7 +12,7 @@
     margin: auto;
 }
 
-.generateMovie{
+.generateMovie, .poster{
     border-radius: 50px;
     box-shadow: 0 5px 20px black;
     margin-bottom: 20px;
