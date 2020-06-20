@@ -14,7 +14,7 @@ var results = $(".results-container");
 var webLink = $(".webLink");
 var index = 0;
 
-// Food stock photo arrays
+// food stock photo arrays
 var foodArr = ["https://tinyurl.com/yd3h2s4t",
                "https://tinyurl.com/yd8sug2v",
                "https://tinyurl.com/y7g82qfm",
