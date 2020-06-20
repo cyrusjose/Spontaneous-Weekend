@@ -1,5 +1,11 @@
+html {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   background-color: #950952;
+  height: 100%;
 }
 .hero {
   background-color: #73b294;
@@ -56,12 +62,16 @@ img.medium {
   height: 250px;
 }
 
-#footer {
+.footer {
+  position: fixed;
+  width: 100%;
   background-color: #023618;
   color: white;
   text-align: center;
+  font-family: "Dancing Script", cursive;
+  padding: 3rem 0rem;
 }
 
-#footer-text {
-  font-family: "Dancing Script", cursive;
-}
+/* .footer-text {
+
+} */
