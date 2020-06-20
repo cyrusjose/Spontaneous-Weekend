@@ -13,12 +13,15 @@ h4{
 }
 
 img{
-    width: 400px;
-    height: 300px;
+    width: 380px;
+    height: 280px;
 }
 
 /* .results-container {
     border-style: ridge;
 } */
 
+.webLink{
+    color: black;
+}
 
