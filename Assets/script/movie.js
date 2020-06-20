@@ -1,4 +1,4 @@
-var movies = ["train to busan", "coraline", "moana", "the invisible man", "artemis fowl", "knives out", "the invisible man"];
+var movies = ["train to busan", "coraline", "moana", "artemis fowl", "knives out", "the invisible man"];
 
 $(document).ready(function () {
   // Required for nav bar mobile functionality
