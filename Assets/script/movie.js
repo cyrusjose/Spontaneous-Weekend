@@ -1,22 +1,22 @@
-var movies = ['The Midnight Man'];
+var movies = ["train to busan"];
 $(document).ready(function () {
   // Required for nav bar mobile functionality
-  $('.sidenav').sidenav();
+  $(".sidenav").sidenav();
   //Required for carousel
   $(document).ready(function () {
-    $('.carousel').carousel();
+    $(".carousel").carousel();
   });
 
-  var movie = $(this).attr('data-name');
+  //   var movie = $(this).attr('data-name');
   //  URL for ajax call
-  var queryURL = 'https://www.omdbapi.com/?t=' + movies + '&apikey=trilogy';
+  var queryURL = "https://www.omdbapi.com/?t=" + movies + "&apikey=trilogy";
   //   Ajax call
   $.ajax({
     url: queryURL,
-    method: 'GET',
+    method: "GET",
   }).done(function (response) {
     // ON click the movie will be shown
-    $('.generateMovie').on('click', function (event) {
+    $(".generateMovie").on("click", function (event) {
       // Prevent default function
       event.preventDefault();
       //   See object info in console.
@@ -32,23 +32,23 @@ $(document).ready(function () {
 
       // $('.body-container').text(JSON.stringify(response));
       //   Add attribute for poster.
-      $('.poster').attr('src', posterImage);
+      $(".poster").attr("src", posterImage);
       //   Add class to main div
-      $('.main').addClass('body-container');
+      $(".main").addClass("body-container");
       //   Display content.
-      $('.movieInfo').removeClass('hide');
+      $(".movieInfo").removeClass("hide");
       //   Show title
-      $('.title').text(title);
+      $(".title").text(title);
       //   Show description
-      $('.description').text(synopsis);
+      $(".description").text(synopsis);
       //   Show release date
-      $('.release').text(releaseDate);
+      $(".release").text(releaseDate);
       //   Show TV rating
-      $('.rating').text(rating);
+      $(".rating").text(rating);
       //   Show Run Time
-      $('.runTime').text(runTime);
+      $(".runTime").text(runTime);
       //   Show Genre
-      $('.genre').text(genre);
+      $(".genre").text(genre);
     });
   });
 });
