@@ -7,7 +7,6 @@ $(document).ready(function () {
     $(".carousel").carousel();
   });
 
-  //   var movie = $(this).attr('data-name');
   //  URL for ajax call
   var queryURL = "https://www.omdbapi.com/?t=" + movies + "&apikey=trilogy";
   //   Ajax call
@@ -21,6 +20,10 @@ $(document).ready(function () {
       event.preventDefault();
       //   See object info in console.
       console.log(response);
+    //   Randomize movies
+    // for (var i = 0; i < movies.length; i++){
+
+    // }
       //   Create variables.
       var posterImage = response.Poster;
       var title = response.Title;
