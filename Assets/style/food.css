@@ -1,1 +1,51 @@
 @import url('style.css');
+
+
+h4{
+    text-align: center;
+    font-weight: 500;
+}
+
+.restaurant-name{
+    font-size: larger;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+}
+
+img{
+    width: 400px;
+    height: 280px;
+    border-radius: 20px;
+}
+
+.webLink{
+    color: black;
+}
+
+.restaurant-cuisine{
+    font-weight: 600;
+}
+
+.restaurant-address{
+    font-weight: 600;
+}
+
+.restaurant-price{
+    font-weight: 600;
+}
+
+.call-btn{
+    background-color: rgb(51, 153, 139);
+    border-radius: 20px;
+}
+
+.web-btn{
+    background-color: rgb(51, 153, 139);
+    border-radius: 20px;
+}
+
+.random-btn{
+    background-color: rgb(51, 153, 139);
+    border-radius: 20px;
+    box-shadow: 0 0 10px black;
+}
