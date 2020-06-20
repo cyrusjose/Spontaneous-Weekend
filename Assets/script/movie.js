@@ -1,4 +1,4 @@
-var movies = ['Coraline'];
+var movies = ['coraline'];
 $(document).ready(function () {
   // Required for nav bar mobile functionality
   $('.sidenav').sidenav();
