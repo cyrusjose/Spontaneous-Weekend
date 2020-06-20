@@ -14,6 +14,24 @@ $(document).ready(function () {
     url: queryURL,
     method: "GET",
   }).then(function (response) {
+      console.log(response);
+      var posterImage = response.Poster;
+      var title = response.Title;
+      var synopsis = response.Plot;
+      var rating = response.Rated;
+      var runTime = response.Runtime;
+      var genre = response.Genre;
+      var releaseDate = response.Released;
+
     // $('.body-container').text(JSON.stringify(response));
+    $('.poster').attr('src', posterImage);
+    $('.title').text(title);
+    $('.description').text(synopsis);
+    $('.release').text(releaseDate);
+    $('.rating').text(rating);
+    $('.runTime').text(runTime);
+    $('.genre').text(genre);
+
+
   });
 });
