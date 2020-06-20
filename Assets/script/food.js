@@ -12,6 +12,27 @@ var callBtn = $(".call-btn");
 var webBtn = $(".web-btn");
 var results = $(".results-container");
 var webLink = $(".webLink");
+var index = 0;
+
+// Food stock photo arrays
+var foodArr = ["https://tinyurl.com/yd3h2s4t",
+               "https://tinyurl.com/yd8sug2v",
+               "https://tinyurl.com/y7g82qfm",
+               "https://tinyurl.com/ybmafd4l",
+               "https://tinyurl.com/ycuq66uz",
+               "https://tinyurl.com/yb2r7953",
+               "https://tinyurl.com/yawq2sxu",
+               "https://tinyurl.com/y7j2l762",
+               "https://tinyurl.com/ycjluapb",
+               "https://tinyurl.com/y7n6qllo",
+               "https://tinyurl.com/y8eph3n6",
+               "https://tinyurl.com/y92apn2p",
+               "https://tinyurl.com/ybb4e57c",
+               "https://tinyurl.com/y8nvt52u",
+               "https://tinyurl.com/y89rmvp6",
+               "https://tinyurl.com/y8x9uhjd",
+               "https://tinyurl.com/ydd6ujrk"];
+
 
 // hide buttons and results container
 callBtn.hide();
@@ -46,12 +67,10 @@ randomBtn.click(function(){
 
     // grab restaurant info from zomato
     $.getJSON(settings, function(data){
-        console.log(data);
         var restaurants = data.restaurants.length
 
         // randomize restaurant choice
         i = Math.floor(Math.random()*restaurants);
-        console.log(i);
         
         // display restaurant info
         resName.text(data.restaurants[i].restaurant.name);
@@ -59,13 +78,13 @@ randomBtn.click(function(){
         resPrice.text("Price range: " + data.restaurants[i].restaurant.price_range);
         resCuisine.text("Cuisine: " + data.restaurants[i].restaurant.cuisines);
 
+
         // append restaurant img
-        var imgSrc = data.restaurants[i].restaurant.photos_url;
-        console.log(imgSrc);
-        var image = $("<img>").attr("src", "https://www.maangchi.com/wp-content/uploads/2019/06/kimchistewtuna.jpg");
+        index = Math.floor(Math.random()*foodArr.length)
+        var imgSrc = foodArr[index]
+        var image = $("<img>").attr("src", imgSrc);
         imgDiv.empty().append(image);
        
-        console.log(data.restaurants[i].restaurant.thumb);
 
         // display restaurant web link
         var link = (data.restaurants[i].restaurant.url);
