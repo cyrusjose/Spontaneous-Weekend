@@ -1,22 +1,27 @@
-var movies = ['The Midnight Man'];
+var movies = ["The Midnight Man"];
 $(document).ready(function () {
   // Required for nav bar mobile functionality
-  $('.sidenav').sidenav();
+  $(".sidenav").sidenav();
   //Required for carousel
   $(document).ready(function () {
-    $('.carousel').carousel();
+    $(".carousel").carousel();
   });
 
-  var movie = $(this).attr('data-name');
-  var queryURL = 'https://www.omdbapi.com/?t=' + movies + '&apikey=trilogy';
-
+  var movie = $(this).attr("data-name");
+  //  URL for ajax call
+  var queryURL = "https://www.omdbapi.com/?t=" + movies + "&apikey=trilogy";
+  //   Ajax call
   $.ajax({
     url: queryURL,
-    method: 'GET',
+    method: "GET",
   }).done(function (response) {
-    $('.generateMovie').on('click', function (event) {
+    // ON click the movie will be shown
+    $(".generateMovie").on("click", function (event) {
+      // Prevent default function
       event.preventDefault();
+      //   See object info in console.
       console.log(response);
+      //   Create variables.
       var posterImage = response.Poster;
       var title = response.Title;
       var synopsis = response.Plot;
@@ -26,15 +31,24 @@ $(document).ready(function () {
       var releaseDate = response.Released;
 
       // $('.body-container').text(JSON.stringify(response));
-      $('.poster').attr('src', posterImage);
-      $('.main').addClass('body-container');
-      $('.movieInfo').removeClass('hide');
-      $('.title').text(title);
-      $('.description').text(synopsis);
-      $('.release').text(releaseDate);
-      $('.rating').text(rating);
-      $('.runTime').text(runTime);
-      $('.genre').text(genre);
+      //   Add attribute for poster.
+      $(".poster").attr("src", posterImage);
+      //   Add class to main div
+      $(".main").addClass("body-container");
+      //   Display content.
+      $(".movieInfo").removeClass("hide");
+      //   Show title
+      $(".title").text(title);
+      //   Show description
+      $(".description").text(synopsis);
+      //   Show release date
+      $(".release").text(releaseDate);
+      //   Show TV rating
+      $(".rating").text(rating);
+      //   Show Run Time
+      $(".runTime").text(runTime);
+      //   Show Genre
+      $(".genre").text(genre);
     });
   });
 });
