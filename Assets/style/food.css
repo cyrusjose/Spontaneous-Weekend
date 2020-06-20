@@ -15,7 +15,7 @@ h4{
 img{
     width: 400px;
     height: 280px;
-    border-radius: 30px;
+    border-radius: 20px;
 }
 
 .webLink{
@@ -36,12 +36,16 @@ img{
 
 .call-btn{
     background-color: rgb(51, 153, 139);
+    border-radius: 20px;
 }
 
 .web-btn{
     background-color: rgb(51, 153, 139);
+    border-radius: 20px;
 }
 
 .random-btn{
     background-color: rgb(51, 153, 139);
+    border-radius: 20px;
+    box-shadow: 0 0 10px black;
 }
