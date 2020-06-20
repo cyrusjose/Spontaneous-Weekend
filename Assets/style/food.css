@@ -1,1 +1,18 @@
-@import url('style.css');
+/* @import url('style.css'); */
+
+
+h4{
+    text-align: center;
+    font-weight: 500;
+}
+
+.card-title{
+    font-size: larger;
+    font-weight: bold;
+    color: rgb(190, 54, 54);
+}
+
+img{
+    width: 400px;
+    height: 300px;
+}
