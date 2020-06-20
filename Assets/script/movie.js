@@ -1,4 +1,4 @@
-var movies = ['coraline'];
+var movies = ['The Midnight Man'];
 $(document).ready(function () {
   // Required for nav bar mobile functionality
   $('.sidenav').sidenav();
@@ -13,7 +13,7 @@ $(document).ready(function () {
   $.ajax({
     url: queryURL,
     method: 'GET',
-  }).then(function (response) {
+  }).done(function (response) {
     $('.generateMovie').on('click', function (event) {
       event.preventDefault();
       console.log(response);
