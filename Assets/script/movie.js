@@ -56,13 +56,15 @@ var movies = [
   "Princess Mononoke",
   "My Neighbor Totoro",
   "The Wind Rises",
-  "Your Name",
+  "Ella Enchanted",
+  "The Iron Lady",
   "Mary and the Witch Flower",
   "House of 1000 Corpses",
   "The Devil’s Rejects",
   "The Shining",
   "Black Swan",
   "Saw",
+  "Call me by Your name",
   "Tank Girl",
   "The Rocky Horror Picture Show",
   "Rent Les Miserables",
@@ -86,7 +88,7 @@ var movies = [
   "Cats",
   "Queen & Slim",
   "Jumanji",
-  "Star Wars: The Last Jedi",
+  "Frozen",
   "Doctor Sleep",
   "Jojo Rabbit",
   "Hunt for the Wilder People",
@@ -105,7 +107,7 @@ var movies = [
   "Late Night",
   "The Favourite",
   "The Lobster",
-  "Spider-Man:Into the Spider-Verse",
+  "Spider-Man: Into the Spider-Verse",
   "Windows",
   "Suspiria",
   "The Hate U Give",
@@ -190,6 +192,7 @@ $(document).ready(function () {
       //   Display content.
       $(".movieInfo").removeClass("hide");
       //   Show title
+      $('.title').removeClass('hide');
       $(".title").text(title);
       //   Show description
       $(".description").text(synopsis);
