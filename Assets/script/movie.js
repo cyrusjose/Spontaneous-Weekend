@@ -173,9 +173,6 @@ $(document).ready(function () {
     }).then(function (response) {
       // ON click the movie will be shown
 
-      //   See object info in console.
-      console.log(response);
-
       //   Create variables.
       var posterImage = response.Poster;
       var title = response.Title;
