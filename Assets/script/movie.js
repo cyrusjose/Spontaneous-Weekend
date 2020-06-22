@@ -145,7 +145,7 @@ var movies = [
   "The Fault in Our Stars",
   "The Dvil Wear Prada",
   "A Walk to Remember",
-  "Stand and Deliver"
+  "Stand and Deliver",
 ];
 
 $(document).ready(function () {
@@ -182,7 +182,6 @@ $(document).ready(function () {
       var genre = response.Genre;
       var releaseDate = response.Released;
 
-      // $('.body-container').text(JSON.stringify(response));
       //   Add attribute for poster.
       $(".poster").attr("src", posterImage);
       //   Add class to main div
@@ -190,7 +189,7 @@ $(document).ready(function () {
       //   Display content.
       $(".movieInfo").removeClass("hide");
       //   Show title
-      $('.title').removeClass('hide');
+      $(".title").removeClass("hide");
       $(".title").text(title);
       //   Show description
       $(".description").text(synopsis);
