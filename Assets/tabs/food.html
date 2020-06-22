@@ -4,23 +4,41 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Restaurant Generator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="../style/food.css">
   </head>
   <body>
 
-    <div class="card text-center">
-      <div class="card-header">
-        Featured
-      </div>
-      <div class="card-body">
-        <h5 class="card-title">Restaurants</h5>
-        <p class="card-text">Input city name:</p>
-        <a href="#" class="btn btn-primary">Randomize</a>
-      </div>
-      <div class="card-footer text-muted">
-        Have fun!
-      </div>
+
+<div class="container search-container">
+  <div class="row">
+    <div class="col s6">
+      <h3>Restaurant Generator</h3>
+      <a class="waves-effect waves-light btn-large random-btn"><i class="material-icons right"></i>Random Restaurant</a>
     </div>
 
+  </div>
+</div>
 
+<hr>
+
+<div class="container results-container">
+  <div class="row">
+    <div class="col s4">
+      <div class="restaurant-name">Restaurant Name</div>
+      <div class="restaurant-cuisine">Cuisine</div>
+      <div class="restaurant-price">Price Range</div>
+      <div class="restaurant-address">Address</div>
+      <hr>
+      <div class="imgDiv"></div>
+      <button class="call-btn">Call</button>
+      <button class="web-btn"><a class="webLink">Website</a></button>
+    </div>
+  </div>
+</div>
+
+
+  <script src="../script/food.js"></script>
   </body>
 </html>
