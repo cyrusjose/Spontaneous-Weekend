@@ -145,6 +145,7 @@ var movies = [
   "The Fault in Our Stars",
   "The Dvil Wear Prada",
   "A Walk to Remember",
+  "Stand and Deliver"
 ];
 
 $(document).ready(function () {
