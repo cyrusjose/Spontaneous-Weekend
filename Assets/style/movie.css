@@ -52,6 +52,7 @@
   border-radius: 80px;
   box-shadow: 0 0 40px black;
   background-color: #73b294;
+  padding: 10px;
 }
 .info {
   text-decoration: underline;

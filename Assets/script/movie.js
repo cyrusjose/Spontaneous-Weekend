@@ -56,13 +56,15 @@ var movies = [
   "Princess Mononoke",
   "My Neighbor Totoro",
   "The Wind Rises",
-  "Your Name",
+  "Ella Enchanted",
+  "The Iron Lady",
   "Mary and the Witch Flower",
   "House of 1000 Corpses",
   "The Devil’s Rejects",
   "The Shining",
   "Black Swan",
   "Saw",
+  "Call me by Your name",
   "Tank Girl",
   "The Rocky Horror Picture Show",
   "Rent Les Miserables",
@@ -86,7 +88,7 @@ var movies = [
   "Cats",
   "Queen & Slim",
   "Jumanji",
-  "Star Wars: The Last Jedi",
+  "Frozen",
   "Doctor Sleep",
   "Jojo Rabbit",
   "Hunt for the Wilder People",
@@ -105,7 +107,7 @@ var movies = [
   "Late Night",
   "The Favourite",
   "The Lobster",
-  "Spider-Man:Into the Spider-Verse",
+  "Spider-Man: Into the Spider-Verse",
   "Windows",
   "Suspiria",
   "The Hate U Give",
@@ -143,6 +145,7 @@ var movies = [
   "The Fault in Our Stars",
   "The Dvil Wear Prada",
   "A Walk to Remember",
+  "Stand and Deliver",
 ];
 
 $(document).ready(function () {
@@ -170,9 +173,6 @@ $(document).ready(function () {
     }).then(function (response) {
       // ON click the movie will be shown
 
-      //   See object info in console.
-      console.log(response);
-
       //   Create variables.
       var posterImage = response.Poster;
       var title = response.Title;
@@ -182,7 +182,6 @@ $(document).ready(function () {
       var genre = response.Genre;
       var releaseDate = response.Released;
 
-      // $('.body-container').text(JSON.stringify(response));
       //   Add attribute for poster.
       $(".poster").attr("src", posterImage);
       //   Add class to main div
@@ -190,6 +189,7 @@ $(document).ready(function () {
       //   Display content.
       $(".movieInfo").removeClass("hide");
       //   Show title
+      $(".title").removeClass("hide");
       $(".title").text(title);
       //   Show description
       $(".description").text(synopsis);
