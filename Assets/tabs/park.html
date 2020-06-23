@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Movie Generator</title>
+    <title>Outdoor Activity </title>
     <!--Import Google Icon Font-->
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
@@ -28,8 +28,10 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
     />
 
+    
+    
 
-    <link rel="stylesheet" href="../style/park.css"/>
+    <link rel="stylesheet" href="../style/park.css" />
     <!-- JS deferred -->
     <script src="../script/park.js" defer></script>
   </head>
@@ -38,7 +40,7 @@
     <nav class="nav-wrapper" id="nav-container">
       <div class="container">
         <a href="../../index.html" class="brand-logo"
-          ><img src="../style/images/wheel.png"
+          ><img class = "rotate" src="../style/images/wheel.png"
         /></a>
         <a href="#" data-target="mobile-demo" class="sidenav-trigger">
           <i class="material-icons">menu</i>
@@ -51,7 +53,7 @@
           </li>
           <li>
             <a class="hover" href=""
-              >|Watch <i class="fa fa-film" aria-hidden="true"></i
+              >Watch <i class="fa fa-film" aria-hidden="true"></i
             ></a>
           </li>
           <li>
@@ -59,9 +61,9 @@
               >Eat <i class="fa fa-cutlery" aria-hidden="true"></i
             ></a>
           </li>
-          <li class ="active">
+          <li class = "active">
             <a class="hover" href="park.html"
-              >Do <i class="fa fa-bicycle" aria-hidden="true"></i
+              >|Do <i class="fa fa-bicycle" aria-hidden="true"></i
             ></a>
           </li>
         </ul>
@@ -94,29 +96,27 @@
     <!-- Begin Body -->
     <main>
       <div class = "genButton">
-        <button class = "generateMovie">Find a Movie</button>
+        <button class = "generate">Find Trail Near By</button>
       </div>
     
-    <div class="main">
-      <h2 class="title center-align"></h2>
-      <div class = "genButton">
+    <div class="main row">
+      <div class = "col s12 m12 l12 xl12">
+        <h5 class="title center-align hide"></h5>
+        <div class = "genButton">
         
-        <img class="poster" />
-      </div>
-      <br />
-      <div class = "genButton">
-        <div class="movieInfo hide">
+        <img class="trail-img" />
+        </div>
+        <br />
+        <div class = "genButton">
+        <div class="info-area hide">
           <ul>
-            <li><h6 class = "info">Plot</h6> <span class = "description"></span></li>
+            <li><h6 class = "info">Location</h6> <span class = "trail-location"></span></li>
             <br/>
-            <li><h6 class = "info">Rlease Date</h6> <span class = "release"></span></li>
+            <li><h6 class = "info">Difficulty</h6> <span class = "trail-difficulty"></span></li>
             <br/>
-            <li><h6 class = "info">Film Rating</h6> <span class = "rating"></span></li>
-            <br/>
-            <li><h6 class = "info">Run Time</h6> <span class = "runTime"></span></li>
-            <br/>
-            <li><h6 class = "info">Genre</h6> <span class = "genre"></span></li>
+            <li><h6 class = "info">Distance</h6> <span class = "trail-distance"></span></li>
           </ul>
+        </div>
         </div>
       </div>
       
