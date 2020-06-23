@@ -143,7 +143,7 @@ var movies = [
   "Atomic Blonde",
   "Miracle in Cell No.7",
   "The Fault in Our Stars",
-  "The Dvil Wear Prada",
+  "The Devil Wears Prada",
   "A Walk to Remember",
   "Stand and Deliver",
 ];
