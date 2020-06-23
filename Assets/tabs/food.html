@@ -10,7 +10,75 @@
   </head>
   <body>
 
+    <main>
+    <!-- Begin navbar -->
+    <nav class="nav-wrapper" id="nav-container">
+      <div class="container">
+        <!-- Buttons on navbar -->
+        <!-- <a href="#!" class="brand-logo"
+          ><img src="../style/images/wheel.png"
+        /></a> -->
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger">
+          <i class="material-icons">menu</i>
+        </a>
+        <ul class="right hide-on-med-and-down">
+          <!-- Home button, active page -->
+          <li class="active">
+            <a class="hover" href="index.html"
+              >|Home <i class="fa fa-home" aria-hidden="true"></i
+            ></a>
+          </li>
+          <!-- Film button -->
+          <li>
+            <a class="hover" href="Assets/tabs/movie.html"
+              >Watch <i class="fa fa-film" aria-hidden="true"></i
+            ></a>
+          </li>
+          <!-- Food button -->
+          <li>
+            <a class="hover" href="Assets/tabs/food.html"
+              >Eat <i class="fa fa-cutlery" aria-hidden="true"></i
+            ></a>
+          </li>
+          <!-- Activity button -->
+          <li>
+            <a class="hover" href="Assets/tabs/park.html"
+              >Do <i class="fa fa-bicycle" aria-hidden="true"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
 
+    <!-- Collapsible navbar for smaller screens -->
+    <ul class="sidenav" id="mobile-demo">
+      <!-- Home button, active page -->
+      <li class="active">
+        <a href="index.html"
+          >|Home <i class="fa fa-home" aria-hidden="true"></i
+        ></a>
+      </li>
+      <!-- Film button -->
+      <li>
+        <a href="Assets/tabs/movie.html"
+          >Watch <i class="fa fa-film" aria-hidden="true"></i
+        ></a>
+      </li>
+      <!-- Food button -->
+      <li>
+        <a href="Assets/tabs/food.html"
+          >Eat <i class="fa fa-cutlery" aria-hidden="true"></i
+        ></a>
+      </li>
+      <!-- Activity button -->
+      <li>
+        <a href="Assets/tabs/park.html"
+          >Do <i class="fa fa-bicycle" aria-hidden="true"></i
+        ></a>
+      </li>
+    </ul>
+    <!-- End navbar -->
+  
 <div class="container search-container">
   <div class="row">
     <div class="col s6">
@@ -21,7 +89,7 @@
   </div>
 </div>
 
-<hr>
+<!-- <hr> -->
 
 <div class="container results-container">
   <div class="row">
@@ -38,7 +106,19 @@
   </div>
 </div>
 
+</main>
+
+    <!-- Begin footer -->
+    <div class="footer-copyright footer">
+      <div class="container">
+        an undefined production 2020
+      </div>
+    </div>
+    <!-- End footer -->
 
   <script src="../script/food.js"></script>
+  <script src="../script.js"></script>
+
+  
   </body>
 </html>
