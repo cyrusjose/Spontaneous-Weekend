@@ -36,8 +36,7 @@ var foodArr = ["https://tinyurl.com/yd3h2s4t",
 
 $(document).ready(function(){
 
-
-
+    // hide buttons and results container
     callBtn.hide();
     webBtn.hide();
     results.hide();
@@ -49,10 +48,8 @@ $(document).ready(function(){
         navigator.geolocation.getCurrentPosition(successCallBack, errorCallBack);
     });
 
-
   });
 
-// hide buttons and results container
 
 
 
@@ -96,7 +93,6 @@ const successCallBack = (position) => {
         index = Math.floor(Math.random()*foodArr.length)
         var imgSrc = foodArr[index]
         var image = $("<img>").attr("src", imgSrc);
-        image.addClass("img-size");
         imgDiv.empty().append(image);
        
 
@@ -112,8 +108,6 @@ const successCallBack = (position) => {
 
     });
 
-// });
-
 }
 
 // if user does not allow browser to access location
@@ -121,9 +115,6 @@ const errorCallBack = (error) => {
     console.error(error);
 }
 
-
-// get current position of user
-// navigator.geolocation.getCurrentPosition(successCallBack, errorCallBack);
 
 
 
