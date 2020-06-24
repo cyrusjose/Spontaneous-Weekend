@@ -1,6 +1,21 @@
 @import url('style.css');
 
 
+.line{
+    width: 315px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.search-container{
+    text-align: center;
+}
+
+.results-container{
+    text-align: center;
+}
+
 h4{
     text-align: center;
     font-weight: 500;
@@ -12,7 +27,7 @@ h4{
     color: rgb(0, 0, 0);
 }
 
-img{
+.img-size{
     width: 300px;
     height: 225px;
     border-radius: 20px;
@@ -37,16 +52,20 @@ img{
 .call-btn{
     background-color: rgb(51, 153, 139);
     border-radius: 20px;
+    padding: 5px;
+    width: 100px;
 }
 
 .web-btn{
     background-color: rgb(51, 153, 139);
     border-radius: 20px;
+    padding: 5.5px;
+    width: 100px;
 }
 
 .random-btn{
-    background-color: rgb(51, 153, 139);
-    border-radius: 20px;
+    background-color: #73b294;
+    border-radius: 30px;
     box-shadow: 0 0 15px black;
     color: black;
     padding: 20px;

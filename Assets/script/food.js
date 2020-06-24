@@ -96,6 +96,7 @@ const successCallBack = (position) => {
         index = Math.floor(Math.random()*foodArr.length)
         var imgSrc = foodArr[index]
         var image = $("<img>").attr("src", imgSrc);
+        image.addClass("img-size");
         imgDiv.empty().append(image);
        
 
