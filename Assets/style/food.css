@@ -1,6 +1,21 @@
 @import url('style.css');
 
 
+.line{
+    width: 315px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.search-container{
+    text-align: center;
+}
+
+.results-container{
+    text-align: center;
+}
+
 h4{
     text-align: center;
     font-weight: 500;
