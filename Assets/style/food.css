@@ -47,5 +47,11 @@ img{
 .random-btn{
     background-color: rgb(51, 153, 139);
     border-radius: 20px;
-    box-shadow: 0 0 10px black;
+    box-shadow: 0 0 15px black;
+    color: black;
+    padding: 20px;
+}
+
+#randomBtn-text{
+    color: black;
 }

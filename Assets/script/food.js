@@ -1,18 +1,18 @@
 // global variables
-var apikey = "eee323892b3fbbbde9d9b268625c3602";
-var randomBtn = $(".random-btn");
-var lattitude = "";
-var longitutde = "";
-var resName = $(".restaurant-name");
-var resPrice = $(".restaurant-price");
-var resAddress = $(".restaurant-address");
-var resCuisine = $(".restaurant-cuisine");
-var imgDiv = $(".imgDiv");
-var callBtn = $(".call-btn");
-var webBtn = $(".web-btn");
-var results = $(".results-container");
-var webLink = $(".webLink");
-var index = 0;
+    var apikey = "eee323892b3fbbbde9d9b268625c3602";
+    var randomBtn = $(".random-btn");
+    var lattitude = "";
+    var longitutde = "";
+    var resName = $(".restaurant-name");
+    var resPrice = $(".restaurant-price");
+    var resAddress = $(".restaurant-address");
+    var resCuisine = $(".restaurant-cuisine");
+    var imgDiv = $(".imgDiv");
+    var callBtn = $(".call-btn");
+    var webBtn = $(".web-btn");
+    var results = $(".results-container");
+    var webLink = $(".webLink");
+    var index = 0;
 
 // food stock photo arrays
 var foodArr = ["https://tinyurl.com/yd3h2s4t",
@@ -34,10 +34,26 @@ var foodArr = ["https://tinyurl.com/yd3h2s4t",
                "https://tinyurl.com/ydd6ujrk"];
 
 
+$(document).ready(function(){
+
+
+
+    callBtn.hide();
+    webBtn.hide();
+    results.hide();
+
+    $('.sidenav').sidenav();
+
+    randomBtn.on("click", function(){
+        // get current position of user
+        navigator.geolocation.getCurrentPosition(successCallBack, errorCallBack);
+    });
+
+
+  });
+
 // hide buttons and results container
-callBtn.hide();
-webBtn.hide();
-results.hide();
+
 
 
 // ask user if we can get their location: Yes-> successCallBack, No -> errorCallBack
@@ -56,10 +72,7 @@ const successCallBack = (position) => {
         }
     }
 
-
-// click restaurant button to randomly generate a restaurant with specific coordinates
-randomBtn.click(function(){
-
+  
     // show buttons and results container
     callBtn.show();
     webBtn.show();
@@ -98,8 +111,7 @@ randomBtn.click(function(){
 
     });
 
-});
-
+// });
 
 }
 
@@ -108,8 +120,9 @@ const errorCallBack = (error) => {
     console.error(error);
 }
 
+
 // get current position of user
-navigator.geolocation.getCurrentPosition(successCallBack, errorCallBack);
+// navigator.geolocation.getCurrentPosition(successCallBack, errorCallBack);
 
 
 
