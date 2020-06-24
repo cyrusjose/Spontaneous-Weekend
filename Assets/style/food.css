@@ -52,11 +52,15 @@ h4{
 .call-btn{
     background-color: rgb(51, 153, 139);
     border-radius: 20px;
+    padding: 5px;
+    width: 100px;
 }
 
 .web-btn{
     background-color: rgb(51, 153, 139);
     border-radius: 20px;
+    padding: 5.5px;
+    width: 100px;
 }
 
 .random-btn{
