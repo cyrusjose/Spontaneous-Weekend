@@ -17,7 +17,6 @@
 .poster {
   display: flex;
   align-items: center;
-
   border-radius: 50px;
   box-shadow: 0 0 25px black;
   margin: 20px;
@@ -37,7 +36,7 @@
 
 .movieInfo {
   display: flex;
-  width: 800px;
+  width: 100%;
   max-width: 75%;
   align-items: center;
   border-radius: 50px;
@@ -52,6 +51,7 @@
   border-radius: 80px;
   box-shadow: 0 0 40px black;
   background-color: #73b294;
+  padding: 10px;
 }
 .info {
   text-decoration: underline;
