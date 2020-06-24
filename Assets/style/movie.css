@@ -35,7 +35,6 @@
 
 .movieInfo {
   display: flex;
-  /* width: 100%; */
   max-width: 100%;
   align-items: center;
   border-radius: 50px;
