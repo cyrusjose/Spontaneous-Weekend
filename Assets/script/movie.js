@@ -165,6 +165,10 @@ $(document).ready(function () {
     // Prevent default function
     event.preventDefault();
 
+    $(".mainHeader").addClass("hide");
+    $(".secondHeader").removeClass("hide");
+    $(".generateMovie").text("Find Another Movie");
+
     //   Randomize movies
     var movieIndex = Math.floor(Math.random() * movies.length);
     //  URL for ajax call
