@@ -146,6 +146,11 @@ var movies = [
   "The Devil Wears Prada",
   "A Walk to Remember",
   "Stand and Deliver",
+  "Joyful Noise",
+  "The Secret Life of Pets",
+  "Pets 2",
+  "Incredibles 2",
+  "Ralph Breaks The Internet"
 ];
 
 $(document).ready(function () {
