@@ -38,7 +38,8 @@ const successCallBack = (position) => {
         var trailLoc = foundTrail.location;
         var traildifficulty = foundTrail.difficulty;
         var traildistance = foundTrail.length;
-        var trailImage = foundTrail.imgMedium;
+        var trailImage = foundTrail.imgSmall;
+        var trialLink =foundTrail.url;
 
         //   Add class to main div
         $(".main").addClass("body-container");
@@ -57,6 +58,7 @@ const successCallBack = (position) => {
         $('.trail-location').text(trailLoc);
         $('.trail-difficulty').text(traildifficulty);
         $('.trail-distance').text(traildistance);
+        $('.trail-link').attr("href", trialLink);
 
     
     }).catch(function(err){
