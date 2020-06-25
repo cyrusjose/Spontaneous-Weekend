@@ -62,9 +62,14 @@ main {
   margin-bottom: 25px;
 }
 
-/* For spacing around the header text */
+/* For spacing around the header title text */
+.header-text-title {
+  margin: 0.25rem 1rem;
+}
+
+/* For spacing around the header sub-title text */
 .header-text {
-  margin: 1rem 1rem;
+  margin: 0.5rem 1rem;
 }
 
 /* Styling for the "neo" in spontaneous */
@@ -74,9 +79,13 @@ main {
 
 /* Styling for the cards */
 .card {
-  border-radius: 25px;
+  border-radius: 10px;
   padding: 25px;
   box-shadow: 0 0 10px 4px;
+}
+
+.card-action {
+  text-align: center;
 }
 
 /* Creates a sticky footer */
