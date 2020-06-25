@@ -57,8 +57,10 @@
   font-weight: bolder;
 }
 
-a {
+#link {
   color: black;
   font-weight: bolder;
   text-decoration: underline;
 }
+
+
