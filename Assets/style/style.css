@@ -62,11 +62,12 @@ main {
   margin-bottom: 25px;
 }
 
-/* For spacing around the header text */
+/* For spacing around the header title text */
 .header-text-title {
   margin: 0.25rem 1rem;
 }
 
+/* For spacing around the header sub-title text */
 .header-text {
   margin: 0.5rem 1rem;
 }
