@@ -35,6 +35,9 @@ Website: <https://cyrusjose.github.io/Spontaneous-Weekend/Assets/tabs/park.html>
 Project Board:
 <https://github.com/users/cyrusjose/projects/2>
 
+Google Slides link:
+https://docs.google.com/presentation/d/1PqUHR504DNTDLY30ljxtIhSAMZTfvXaMHRxlpzdZeFI/edit?usp=sharing
+
 ## Credits
 
 Thank you to the UCR Extension Full Stack Boot Camp, with instructor Joe Tanksley. Thanks to our T.A. Adam Abundis for helping us work through some thorny issues in our coding and patiently showing us how to use GitHub correctly.
