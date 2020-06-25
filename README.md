@@ -14,7 +14,7 @@ How much time do you waste before settling on a decision about what to do with y
 
 ## Usage
 
-Our app is easy to use on any size screen. Simply use the navigation bar or the link cards on the home page to get to the activity, movie, food, or hike, for which you want a random selection. Once you are on the page, simply click the button to generate your first random option. Not happy with the first pick or want to see more? Click that button again!
+Our app is easy to use on any size screen. Simply use the navigation bar or the link cards on the home page to get to the activity for which you want a random selection. Once you are on the page, click the button to generate your first random option. Not happy with the first pick or want to see more? Click that button again!
 
 Home Page:
 Website: <https://cyrusjose.github.io/Spontaneous-Weekend/index.html>
@@ -41,4 +41,4 @@ Thank you to the UCR Extension Full Stack Boot Camp, with instructor Joe Tanksle
 
 ## License
 
-We chose a permissive GNU license for this project, so that others can use and modify the code for their own purposes, but the source code cannot become proprietary and changes must be documented. The file name is COPYING as per GNU convention.
+We chose a permissive GNU license for this project, so that others can use and modify the code for their own purposes, but the source code cannot become proprietary and changes must be documented.
