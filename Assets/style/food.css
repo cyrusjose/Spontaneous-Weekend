@@ -74,3 +74,9 @@ h4{
 #randomBtn-text{
     color: black;
 }
+
+.food-img{
+    width: 300px;
+    height: 225px;
+    border-radius: 20px;
+}
