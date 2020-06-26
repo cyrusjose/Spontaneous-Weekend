@@ -146,6 +146,11 @@ var movies = [
   "The Devil Wears Prada",
   "A Walk to Remember",
   "Stand and Deliver",
+  "Joyful Noise",
+  "The Secret Life of Pets",
+  "Pets 2",
+  "Incredibles 2",
+  "Ralph Breaks The Internet"
 ];
 
 $(document).ready(function () {
@@ -159,6 +164,10 @@ $(document).ready(function () {
   $(".generateMovie").on("click", function (event) {
     // Prevent default function
     event.preventDefault();
+
+    $(".mainHeader").addClass("hide");
+    $(".secondHeader").removeClass("hide");
+    $(".generateMovie").text("Find Another Movie");
 
     //   Randomize movies
     var movieIndex = Math.floor(Math.random() * movies.length);
